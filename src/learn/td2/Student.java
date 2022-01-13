@@ -29,6 +29,16 @@ public class Student {
         this.lastname = lastname;
     }
 
+    /**
+     * Student Constructor 2
+     *
+     * @param number student number
+     * @param firstname student firstname
+     * @param lastname student lastname
+     * @param mention student mention example: "MATHS"
+     * @param high the course that represent his mention
+     * @param low the course that he has chosen in addition of the high course...
+     */
     public Student(int number, String firstname, String lastname, String mention, Course high, Course low) {
         this.number = number;
         this.firstname = firstname;
