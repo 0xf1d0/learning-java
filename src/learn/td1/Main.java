@@ -12,7 +12,7 @@ public class Main {
      */
     public static void main(String[] args) {
         Student vincent;
-        vcohadon = new Student(213231, "Vincent", "C");
+        vincent = new Student(213231, "Vincent", "C");
 
         Course course1, course2;
         course1 = new Course("Java", 2);
