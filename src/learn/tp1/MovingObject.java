@@ -148,6 +148,12 @@ public class MovingObject {
         return this.ray.equals(0.0);
     }
 
+    /**
+     * Test if the moving object enters in collision with another one
+     *
+     * @param that another MovingObject
+     * @return true/false whether moving object is in collision or not
+     */
     public boolean collision(MovingObject that) {
         return Math.sqrt(Math.pow(this.x - that.x, 2) + Math.pow(this.y - that.y, 2)) < this.ray + that.ray;
     }
