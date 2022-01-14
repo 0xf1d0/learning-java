@@ -1,8 +1,7 @@
 package learn.tp1;
 
 /**
- * @author vcohadon
- * @link vincent.cohadon@etudiant.univ-lr.fr
+ * @author phindau
  * @since 14/01/2022, 16:03
  */
 public class MovingObject {
