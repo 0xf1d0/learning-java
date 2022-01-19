@@ -3,8 +3,7 @@ package learn.tp3;
 import java.util.Scanner;
 
 /**
- * @author vcohadon
- * @link vincent.cohadon@etudiant.univ-lr.fr
+ * @author phindau
  * @since 19/01/2022, 11:27
  */
 public class App {
