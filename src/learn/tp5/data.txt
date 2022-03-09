@@ -1,0 +1,5 @@
+7.0 Salaires entre 7000.0€ et 12610.0€ (15%)
+13.0 Salaires entre 12610.0€ et 18220.0€ (28%)
+9.0 Salaires entre 18220.0€ et 23830.0€ (20%)
+12.0 Salaires entre 23830.0€ et 29440.0€ (26%)
+5.0 Salaires entre 29440.0€ et 35050.0€ (11%)
