@@ -2,12 +2,9 @@ package learn.tp5;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 /**
- *
- * @author prodriguez
+ * @author Vincent C.
  */
 public class App {
     /**
@@ -26,12 +23,11 @@ public class App {
         System.out.println("Nombre total de salaires : " + salaires.size());
         System.out.println("Salaire moyen : " + salaireMoyen(salaires));
         System.out.println("Salaire médian : " + salaireMedian(salaires));
-        ArrayList<String> lines = new ArrayList<String>();
-        for (Double[] d : repartition(salaires, 5)) {
+        ArrayList<String> lines = new ArrayList<>();
+        for (Double[] d : repartition(salaires, 10)) {
             lines.add(d[0] + " Salaires entre " + d[1] + "€ et " + d[2] + "€ " + "(" + Math.round(d[0] / salaires.size() * 100) + "%)");
         }
         new EnregistrementFichier(lines);
-
     }
 
     public static double salaireMin(ArrayList<Double> salaires) {
@@ -49,7 +45,7 @@ public class App {
         return sum / salaires.size();
     }
 
-    public static ArrayList<Double> sort(ArrayList<Double> salaires) {
+    public static void sort(ArrayList<Double> salaires) {
         for (int x = 0; x < salaires.size() - 1; ++x) {
             int selected = x;
             for (int y = x + 1; y < salaires.size(); ++y) {
@@ -61,11 +57,10 @@ public class App {
             }
 
         }
-        return salaires;
     }
 
     public static ArrayList<Double[]> repartition(ArrayList<Double> salaires, int classes) {
-        ArrayList<Double[]> repartition = new ArrayList<Double[]>();
+        ArrayList<Double[]> repartition = new ArrayList<>();
         double step = (salaireMax(salaires) - salaireMin(salaires)) / classes;
         int j = 0;
         for (int i = 1; i <= classes; ++i) {
